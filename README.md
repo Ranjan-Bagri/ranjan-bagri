@@ -1,4 +1,5 @@
-## Hi there 👋
+## Hi there 👋 I am Ranjan Bagri
+<h3>I am Graduate in Physics and I've a Bachelor Degree in Education. I'm also Github Arctic Code Vault Contributor Badge winner. And I was a former moderator of an start-up named Sololearn.</h3>
 
 <!--
 **Ranjan-Bagri/ranjan-bagri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
