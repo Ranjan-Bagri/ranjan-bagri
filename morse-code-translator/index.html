@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morse Code Generator</title>
+        <style>
+            body {
+    
+}
+input {
+  width: 89vw;
+  height: 50%;
+  padding: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  top:100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.morse{
+    height:50px;
+    width:50px;
+    background-color:#ffffff;
+    border-box:
+}
+
+        </style>
+    </head>
+    <body>
+        <input id="text" type="text" placeholder="Enter text">
+<button onclick="generateMorse()">Generate Morse Code</button>
+<div id="morse"></div>
+<script>
+    function generateMorse() {
+  const text = document.getElementById("text").value.toUpperCase();
+  let morseCode = "";
+  const morseDict = {
+    "A": ".-",
+    "B": "-...",
+    "C": "-.-.",
+    "D": "-..",
+    "E": ".",
+    "F": "..-.",
+    "G": "--.",
+    "H": "....",
+    "I": "..",
+    "J": ".---",
+    "K": "-.-",
+    "L": ".-..",
+    "M": "--",
+    "N": "-.",
+    "O": "---",
+    "P": ".--.",
+    "Q": "--.-",
+    "R": ".-.",
+    "S": "...",
+    "T": "-",
+    "U": "..-",
+    "V": "...-",
+    "W": ".--",
+    "X": "-..-",
+    "Y": "-.--",
+    "Z": "--..",
+    "0": "-----",
+    "1": ".----",
+    "2": "..---",
+    "3": "...--",
+    "4": "....-",
+    "5": ".....",
+    "6": "-....",
+    "7": "--...",
+    "8": "---..",
+    "9": "----.",
+  };
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text.charAt(i);
+    morseCode += morseDict[char] + " ";
+  }
+
+  document.getElementById("morse").innerHTML = morseCode;
+}
+</script>
+    </body>
+</html>
